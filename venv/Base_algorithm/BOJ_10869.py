@@ -1,6 +1,10 @@
+# a, b = map(int, input().split(' '))
 import sys
 input = sys.stdin.readline
 
-# a, b = map(int, input().split(' '))
-a = input()
-print(a,"??!")
+A,B,C = map(int, input().split(' '))
+
+print((A+B)%C)
+print(((A%C) + (B%C))%C)
+print((A*B) % C)
+print(((A % C)*(B % C))%C)
